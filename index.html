@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banquetería Rosada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Banquetería Carolina</h1>
+        <p>Canapés, cócteles y sabores únicos para tus eventos</p>
+    </header>
+
+    <main>
+        <!-- Productos -->
+        <section class="productos">
+            <h2>Productos Destacados</h2>
+            <div class="productos-grid">
+                <div class="producto">
+                    <img src="https://via.placeholder.com/200" alt="Variedad de Canapés" onclick="abrirImagen(this)">
+                    <h3>Variedad de Canapés</h3>
+                    <p>$35.000 (100/u)</p>
+                </div>
+                <div class="producto">
+                    <img src="https://via.placeholder.com/200" alt="k-pops" onclick="abrirImagen(this)">
+                    <h3>k-pops</h3>
+                    <p>$35.000 (100/u)</p>
+                </div>
+                <div class="producto">
+                    <img src="https://via.placeholder.com/200" alt="Dulces minis" onclick="abrirImagen(this)">
+                    <h3>Dulces minis</h3>
+                    <p>$35.000 (100/u)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería -->
+        <section class="galeria">
+            <h2>Galería</h2>
+            <div class="imagenes">
+                <img src="img/WhatsApp Image 2025-09-26 at 6.24.22 PM.jpeg" alt="Evento 1" onclick="abrirImagen(this)">
+                <img src="img/WhatsApp Image 2025-09-26 at 6.24.23 PM (1).jpeg" alt="Evento 2" onclick="abrirImagen(this)">
+                <img src="img/WhatsApp Image 2025-09-26 at 6.24.23 PM.jpeg" alt="Evento 3" onclick="abrirImagen(this)">
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="contacto">
+            <h2>Contáctanos</h2>
+            <p>📍 Maipú, Chile</p>
+            <p>📞 +56 9 8463 2736</p>
+            <p>✉️ carolina.valencia.e@usach.cl</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Banquetería Rosada · Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Botón WhatsApp -->
+    <a href="https://wa.me/56912345678" class="whatsapp" target="_blank" title="Cotiza por WhatsApp">
+        💬
+    </a>
+
+    <!-- Lightbox para imágenes con navegación -->
+    <div id="lightbox" class="lightbox">
+        <span class="cerrar" onclick="cerrarImagen()">&times;</span>
+        <span class="flecha izquierda" onclick="cambiarImagen(-1)">&#10094;</span>
+        <img id="imagenGrande" class="lightbox-contenido">
+        <span class="flecha derecha" onclick="cambiarImagen(1)">&#10095;</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

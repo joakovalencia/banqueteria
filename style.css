@@ -1,0 +1,182 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f5;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #ffb6c1, #d36b8a);
+    color: white;
+    text-align: center;
+    padding: 2em 1em;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 2em;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Productos */
+.productos {
+    text-align: center;
+}
+
+.productos h2 {
+    margin-bottom: 1em;
+    color: #d36b8a;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+    justify-items: center;
+}
+
+.producto {
+    width: 250px;
+    padding: 1em;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.producto h3 {
+    margin: 0.5em 0 0.2em;
+    color: #c71585;
+}
+
+.producto p {
+    color: #555;
+}
+
+/* Galería */
+.galeria .imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.galeria img {
+    border-radius: 10px;
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Secciones Contacto */
+.contacto {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 900px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.contacto p {
+    margin: 0.3em 0;
+    font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+    background-color: #ffb6c1;
+    text-align: center;
+    color: white;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+/* Botón WhatsApp */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+/* Lightbox */
+.lightbox {
+    display: none; 
+    position: fixed; 
+    z-index: 999; 
+    padding-top: 60px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.lightbox-contenido {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.cerrar {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Flechas navegación */
+.flecha {
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    transform: translateY(-50%);
+    padding: 0 10px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 50%;
+}
+
+.flecha.izquierda {
+    left: 10px;
+}
+
+.flecha.derecha {
+    right: 10px;
+}
